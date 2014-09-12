@@ -1,0 +1,790 @@
+html,body {
+    height: 100%;
+}
+
+body {
+    font-family: "myriad-pro",sans-serif;
+    background: #F0F0F0 url('../img/noise.gif') repeat -70% 0;
+    width: 100%;
+}
+
+h1 {
+    margin: 0.5em 0;
+}
+
+h2 {
+    margin: 1.5em 0 0.5em 0;
+}
+
+iframe {
+    border: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.no-padding {
+    padding: 0!important;
+}
+
+.center {
+    text-align: center;
+}
+
+ul#mobile {
+    display: none;
+    display: none;
+}
+
+div.like-top {
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    width: 75px;
+}
+
+div.tweet-top {
+    left: 100px!important;
+    width: 100px;
+}
+
+div.fb-comments {
+    display: block;
+    margin: 30px auto 0 auto;
+}
+
+div#pieChartsContainer {
+    padding: 0;
+    margin: 0;
+}
+
+a#goldAd {
+    margin-top: 60px;
+    text-align: center;
+    display: block;
+    overflow: auto;
+}
+
+button#convertCurrency {
+    position: fixed;
+    top: 75px;
+    right: 25px;
+    background: #333;
+    color: #FFF;
+    padding: 3px 5px;
+    border-radius: 6px;
+}
+
+div.wrapContainer {
+    min-height: 100%;
+    width: 100%;
+}
+
+div.wrapContainer wrap {
+    overflow: auto;
+    padding-bottom: 44px;
+    width: 100%;
+}
+
+div.footerContainer {
+    position: relative;
+    margin-top: -44px;
+    height: 44px;
+    clear: both;
+}
+
+body:before {
+    content: "";
+    height: 100%;
+    float: left;
+    width: 0;
+    margin-top: -32767px;
+}
+
+div.headerContainer {
+    background: #333;
+    width: 100%;
+    color: #FFF;
+    position: fixed;
+    z-index: 10000;
+    border-bottom: 5px solid #666;
+}
+
+header {
+    width: 70%;
+    max-width: 1200px;
+    height: 48px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 1.25em;
+    font-weight: 400;
+    margin: 0.6em 0;
+    float: left;
+}
+
+header h1 a {
+    color: #FFF;
+    -webkit-transition: color 0.2s ease;
+    -moz-transition: color 0.2s ease;
+    -o-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+}
+
+header h1 a.logo:hover {
+    color: #bdbdbd;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 1.25em 0;
+    font-size: 0.8em;
+}
+
+header nav ul li {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li:last-of-type {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    color: #bdbdbd;
+    padding: 5px 10px;
+    border-radius: 6px;
+    -webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+    -o-transition: background 0.2s ease;
+    transition: background 0.2s ease;
+}
+
+header nav ul li a#navDrop {
+    padding-right: 23.5px;
+    background: url('../img/dwnArrow.png') no-repeat 90% 50%;
+}
+
+header nav ul li #navDrop:hover {
+    background: #b3abab url('../img/dwnArrowHover.png') no-repeat 90% 50%;
+}
+
+header nav ul li a.dropActive {
+    background: url('../img/upArrow.png') no-repeat 90% 50%!important;
+}
+
+header nav ul li .dropActive:hover {
+    background: #b3abab url('../img/upArrowHover.png') no-repeat 90% 50%!important;
+}
+
+header nav ul li a.sel {
+    color: #FFF;
+    background: #000;
+    border-radius: 6px;
+}
+
+header nav ul li a:hover {
+    background: #b3abab;
+    color: #000;
+}
+
+header nav ul li a img {
+    display: inline;
+}
+
+aside {
+    background: #dadada;
+    border-top: 5px solid #666;
+    color: #333;
+    display: none;
+    font-size: 0.8em;
+    width: 100%;
+    text-align: center;
+}
+
+aside div.navLinksContainer {
+    display: inline-block;
+    *display: inline;
+    text-align: justify;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 1% 0 1% 2%;
+}
+
+aside div.navLink {
+    display: inline-block;
+    *display: inline;
+    width: 140px;
+    height: 20px;
+    padding: 5px 0;
+    text-align: left;
+}
+
+aside div.navLink a {
+    text-decoration: none;
+    color: #333;
+}
+
+aside div.navLink a:hover {
+    font-weight: bold;
+}
+
+aside div.navLink a img {
+    width: 20px;
+    height: 20px;
+    padding-right: 2px;
+    vertical-align: 35%;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    overflow: hidden;
+}
+
+aside div.navLink:hover img {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+aside div.navLink p {
+    display: inline;
+    vertical-align: 50%;
+    line-height: 20px;
+}
+
+div.pageContainer {
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 5% 70px 5%;
+    background: rgba(0,0,0,0.025);
+}
+
+section.heading {
+    padding-bottom: 20px;
+}
+
+section.heading h1 {
+    padding: 0.5% 1.5%;
+    margin-top: 0.75em;
+    margin-bottom: 20px;
+    background: rgba(0,0,0,0.1);
+    display: inline-block;
+    *display: inline;
+    border-radius: 6px;
+}
+
+section.heading p,section.heading strong {
+    padding-left: 1.5%;
+    padding-right: 0.5%;
+    font-size: 1.2em;
+    display: block;
+}
+
+section.subheading {
+}
+
+section.subheading h2 {
+    padding: 0.5% 1.5%;
+    margin-left: 1.5%;
+    background: rgba(0,0,0,0.05);
+    display: inline-block;
+    *display: inline;
+    border-radius: 6px;
+}
+
+section.subheading p {
+    padding-left: 3%;
+    padding-right: 2.5%;
+}
+
+div.index section.heading,div.country section.heading {
+    border-bottom: 0;
+}
+
+div.index section.worldClock,div.country section.countryClock {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 40px;
+}
+
+div.index section.worldClock h2.debtClock,div.country section.countryClock h2.debtClock {
+    margin: 0 auto;
+    display: inline-block;
+    *display: inline;
+    border-radius: 6px;
+    padding: 2% 4%;
+    background: #3D3D3D;
+    color: #FFF;
+    font-size: 4em;
+    text-align: center;
+}
+
+div.index section.worldClock h3#debtWords,div.country section.countryClock h3#debtWords {
+    display: block;
+    text-align: center;
+    width: 85%;
+    height: 4em;
+    margin: 0 auto;
+    font-size: 2.25em;
+    font-family: "tekton-pro",sans-serif;
+    font-weight: normal;
+}
+
+div.index section.worldClock p.caption,div.country section.countryClock p.caption {
+    text-align: center;
+    margin: 5% auto;
+    font-size: 1.25em;
+}
+
+div.index section.nationalClocks {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 40px;
+}
+
+div.index section.nationalClocks div.flagsContainer {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    overflow: hidden;
+}
+
+div.index section.nationalClocks div.flagsContainer div.flag {
+    width: 80.5px;
+    height: 130px;
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    *display: inline;
+    vertical-align: top;
+}
+
+div.index section.nationalClocks div.flagsContainer div.flag p {
+    margin-top: 5px;
+}
+
+div.index section.nationalClocks div.flagsContainer div.flag img {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    overflow: hidden;
+}
+
+div.index section.nationalClocks div.flagsContainer div.flag img:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+div.index section.noMargin {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+div.index section.subheading h2 {
+    margin-top: 60px;
+}
+
+div.index section.subheading h2:first-of-type {
+    margin-top: 20px;
+}
+
+div.index div.factsContainer {
+    width: 85%;
+    margin: 20px auto;
+    background: #FFF;
+    color: #333;
+    padding: 5px;
+    font-size: 1.25em;
+    border-radius: 6px;
+}
+
+div.index div.dark {
+    background: #333;
+    color: #FFF;
+}
+
+div.index div.comments {
+    padding: 0;
+    background: none;
+    margin: 40px auto 0 auto;
+}
+
+div.index div.factsContainer p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1em;
+}
+
+div.index a.letusknow {
+    color: #999;
+}
+
+div.index a.letusknow:hover {
+    color: #666;
+}
+
+div.country section.heading {
+    padding-bottom: 0;
+}
+
+div.country section.heading h1 {
+    font-size: 3em;
+    padding: 15px 20px 15px 15px;
+}
+
+div.country section.heading h1 span {
+    vertical-align: middle;
+}
+
+div.country section.countryClock {
+    padding-bottom: 20px;
+}
+
+div.country section.countryClock h2.debtClock {
+    margin-top: 20px;
+    padding-bottom: 2.25%;
+}
+
+div.country .noMargin {
+    margin-bottom: 0;
+}
+
+div.country section.clock h2 {
+    margin-bottom: 40px;
+}
+
+div.country section.cols div.left,div.country section.cols div.right {
+    display: inline-block;
+    *display: inline;
+}
+
+div.country section.cols div.left {
+    padding-right: 75px;
+}
+
+div.country section.figures p {
+    font-size: 2em;
+    margin-top: 0.5em;
+    display: block;
+}
+
+div.country section.facts li {
+    margin-left: 1.75%;
+}
+
+div.country section.facts li p {
+    font-size: 1.5em;
+    padding-left: 0;
+}
+
+div.country section.facts li p:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+div.country section.figures strong {
+    font-size: 1.5em;
+}
+
+div.country section.figures .figuresContainer {
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+div.country section.figures .figuresInnerContainer {
+    display: inline-block;
+    padding: 30px !important;
+    background: rgba(0,0,0,0.05);
+    border-radius: 6px;
+    text-align: left;
+}
+
+div.householdContainerContainer {
+    text-align: center;
+}
+
+div.householdContainer {
+    display: inline-block;
+    *display: inline;
+    margin: 20px auto 0 auto;
+}
+
+div.numPeopleSelector {
+    padding: 10px;
+    background: rgba(0,0,0,0.025);
+    border-radius: 6px;
+    display: inline-block;
+    *display: inline;
+    float: left;
+    margin-right: 50px;
+    margin-top: 75px;
+    line-height: 20px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+div.numPeopleSelector h3,div.numPeopleSelector input,div.numPeopleSelector button {
+    display: inline-block;
+    *display: inline;
+    text-align: center;
+    margin: 0 auto;
+}
+
+div.numPeopleSelector h3 {
+    margin: 0 20px 0 0;
+}
+
+div.numPeopleSelector input {
+    text-align: center;
+    font-size: 1em;
+    height: 14px;
+    padding: 2px 1px 1px 0;
+}
+
+div.numPeopleSelector img,div.numPeopleSelector input {
+    width: 20px;
+    height: 20px;
+    padding-top: 0;
+    margin: 0 2px 0 2px;
+}
+
+div.numPeopleSelector img {
+    margin-top: -2px;
+}
+
+div.numPeopleSelector button {
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+h3.householdShare {
+    text-align: center;
+}
+
+h3.householdShareTitle {
+    text-align: center;
+    font-size: 3em;
+    padding: 10px 20px;
+    background: #333;
+    color: #FFF;
+    border-radius: 6px;
+    display: inline-block;
+    *display: inline;
+}
+
+h3.title {
+    display: block!important;
+    margin: 0 0 20px 0!important;
+    text-align: center;
+}
+
+div.product {
+    width: 500px;
+    height: 350px;
+    float: right;
+}
+
+div.product h3#productTitle {
+    text-align: center;
+    height: 25px;
+    font-size: 1em;
+}
+
+div.product img.spinner {
+    margin-top: 117px;
+}
+
+div.contact section.heading,div.disclaimer section.heading,div.widget section.heading,div.ourfigures section.heading {
+    padding-bottom: 0;
+}
+
+div.contact section.heading p,div.ourfigures section.heading p {
+    margin-bottom: 0;
+}
+
+div.ourfigures ol {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+div.contact section.heading form {
+    margin-left: 2%;
+    margin-right: 2.5%;
+    margin-top: 15px;
+    margin-bottom: 85px;
+    padding: 30px;
+    display: inline-block;
+    *display: inline;
+    overflow: auto;
+    border-radius: 6px;
+    background: rgba(0,0,0,0.025);
+}
+
+div.contact section.heading form label {
+    width: 100px;
+    display: inline-block;
+    *display: inline;
+    margin: 10px 0;
+    line-height: 14px;
+}
+
+div.contact section.heading form textarea {
+    margin-top: 5px;
+    width: 300px;
+}
+
+div.contact section.heading form input#submit {
+    margin-top: 30px;
+    margin-left: 175px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background: #333;
+    color: #FFF;
+    font-size: 14px!important;
+}
+
+div.contact section.heading form input#submit:hover {
+    background: #333;
+    color: #FFF;
+}
+
+div.widget section.heading p {
+    margin-bottom: 0;
+}
+
+div.widget div.widgetContainer {
+    width: 93%;
+    margin: 40px auto 20px auto;
+    padding: 20px;
+    overflow: auto;
+    border-radius: 6px;
+    background: rgba(0,0,0,0.025);
+    color: #333;
+}
+
+div.widget div.widgetContainer div.widgetLeft {
+    width: 25%;
+    float: left;
+    padding-bottom: 10px;
+    padding-left: 5%;
+}
+
+div.widget div.widgetContainer div.widgetLeft select {
+    margin-left: 7.5%;
+}
+
+div.widget div.widgetContainer div.widgetRight {
+    width: 60%;
+    float: left;
+    padding-bottom: 10px;
+    padding-left: 5%;
+}
+
+div.widgetContainer div.displayNationalWidget,div.widgetContainer div.displayWorldWidget {
+    margin-left: 2.5%;
+}
+
+div.widgetContainer .embed {
+    padding-top: 10px;
+}
+
+div.widgetContainer div.widgetCodeContainer {
+    overflow: auto;
+    background: #333;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 0 auto 0.5em auto;
+    width: 95%;
+}
+
+div.widgetContainer div.widgetCodeContainer div.widgetCode {
+    background: #FFF;
+    color: #333;
+    font-size: 0.75em;
+    width: 99%;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 6px;
+    font-family: Tahoma,Geneva,sans-serif;
+}
+
+div.piechart {
+    margin: 20px auto;
+    border-radius: 6px;
+    width: 80%;
+    padding: 20px 20px 40px 40px;
+    background: #FFF;
+}
+
+div.footerContainer {
+    background: #333;
+    width: 100%;
+    color: #bdbdbd;
+}
+
+footer {
+    padding: 10px 1.25%;
+    font-size: 0.75em;
+    width: 97.5%;
+    height: 24px;
+    margin: 0 auto;
+}
+
+footer p {
+    float: left;
+    margin: 0;
+    padding: 5px 0;
+}
+
+footer a {
+    float: right;
+    color: #bdbdbd;
+    margin-left: 0.5%;
+    padding: 5px 10px;
+    border-radius: 6px;
+    -webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+    -o-transition: background 0.2s ease;
+    transition: background 0.2s ease;
+}
+
+footer a:hover {
+    background: #b3abab;
+    color: #000;
+}
+
+iframe.twitter-timeline {
+    max-width: 724px!important;
+    width: 100%!important;
+}

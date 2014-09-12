@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <title>Јавен долг на Република Македонија</title>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body lang="en">
+
+<div class="pageContainer country">
+
+
+  <section class="subheading clock">
+    <h2 style="padding: 0.5% 25%; text-align: center;">Јавен долг на Република Македонија</h2>
+    <div class="clear"></div>
+  </section>
+
+  <section class="countryClock">
+    <h2 class="debtClock">
+      <span id="currLeft">&#0128; </span>
+      <span id="debtDisplayFast">3 305 193 456</span>
+      <span id="currRight" style="display: none;"></span>
+    </h2>
+    <div class="clear"></div>
+    <p class="center" style="margin-top: 0.75em; margin-bottom: 0.5em"><strong>Извори:</strong><a href="http://data.worldbank.org/country/macedonia-fyr">Светска Банка</a>, <a href="http://finance.gov.mk/files/u4/tojba_na_dolg_na_centralna_vlada__31_07_2014_1.pdf">Министерство за финансии на Република Македонија</a></p>
+    <div class="clear"></div>
+  </section>
+
+  <section class="subheading" style="text-align: center; margin: 20px 0 40px 0">
+  </section>
+
+  <section class="subheading figures cols">
+    <div class="clear"></div>
+    <div class="figuresContainer">
+      <div class="figuresInnerContainer">
+        <div class="left">
+          <strong>Годишна каматна стапка:</strong>
+          <p><span id="IPY">3,3 %</span></p>
+          <br>
+          <strong>Население:</strong>
+          <p>2 022 547</p>
+          <br>
+          <strong>БДП:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+          <p class="noMargin"><span id="GDP">&#0128;  8 088 000 000</span></p>
+        </div>
+        <div class="right">
+          <strong>Дневна камата:</strong>
+          <p><span id="IPS">&#0128; 298 699</span></p>
+          <br>
+          <strong>Долг на секој граѓанин:</strong>
+          <p><span id="SCS">&#0128; 1 634</span></p>
+          <br>
+          <strong>Долг во % од БДП:</strong>
+          <p class="noMargin">40,86%</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>
+
+
+</div>
+
+</body>
+</html>
